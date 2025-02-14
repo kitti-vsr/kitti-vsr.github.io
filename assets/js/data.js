@@ -143,7 +143,8 @@ const projects = [
     ],
     screenshots_column: 2,
     date: "June 2023",
-    my_role: "Designed and programmed the initial release of the app",
+    my_role:
+      "Designed and implemented a new feature, improving system functionality and user experience.",
     technologies: "Next.js, Tailwind CSS, Prisma, and PostgreSQL",
     link: "https://app.elmercadobangkok.com/admin/sign-in",
   },
@@ -164,7 +165,8 @@ const projects = [
     ],
     screenshots_column: 2,
     date: "September 2023",
-    my_role: "Designed and programmed the initial release of the app",
+    my_role:
+      "Designed and implemented a new feature, improving system functionality and user experience.",
     technologies: "Next.js, Tailwind CSS, and Prisma",
     link: "https://smartcbt.dasta.or.th/login",
   },
