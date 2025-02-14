@@ -17,46 +17,46 @@ function getQueryParams() {
 
 // Function to render content based on query parameters
 function renderContent() {
-  const queryParams = getQueryParams();
   const headElement = document.getElementById("head");
   const titleElement = document.getElementById("title");
   const descriptionElement = document.getElementById("description");
-  const screenshot1Element = document.getElementById(`screenshot1`);
-  const screenshot2Element = document.getElementById(`screenshot2`);
-  const screenshot3Element = document.getElementById(`screenshot3`);
-  const screenshot4Element = document.getElementById(`screenshot4`);
+  const screenshotsElement = document.getElementById(`screenshots`);
   const dateElement = document.getElementById("date");
   const myRoleElement = document.getElementById("myRole");
   const technologiesElement = document.getElementById("technologies");
   const linkElement = document.getElementById("link");
 
+  const queryParams = getQueryParams();
   if (queryParams.id) {
     const id = parseInt(queryParams.id);
     const project = projects.find((project) => project.id == id);
-
     if (project) {
       headElement.innerText = "Kitti's Portfolio : " + project.title;
       titleElement.innerText = project.title;
       descriptionElement.innerText = project.description;
 
-      const path = "images/projects/" + project.id + "/";
-      screenshot1Element.src = path + project.screenshots[0];
-      screenshot2Element.src = path + project.screenshots[1];
-      screenshot3Element.src = path + project.screenshots[2];
-      screenshot4Element.src = path + project.screenshots[3];
+      const screenshots = [];
+      for (let i = 0; i < project.screenshots.length; i++) {
+        screenshots.push(project.screenshots[i]);
+      }
+
+      let col = 12 / project.screenshots_column;
+      let screenshotHtml = "";
+      for (let i = 0; i < screenshots.length; i++) {
+        screenshotHtml += `<div class="col-${col}"><span class="image fit"><img src="${screenshots[i]}" alt="" /></span></div>`;
+      }
+
+      const screenshotContainer = `<div class="row gtr-uniform">${screenshotHtml}</div>`;
+      screenshotsElement.innerHTML = screenshotContainer;
 
       dateElement.innerText = project.date;
-      myRoleElement.innerText = project.myRole;
+      myRoleElement.innerText = project.my_role;
       technologiesElement.innerText = project.technologies;
-
       if (project.link) {
         linkElement.href = project.link;
       } else {
         linkElement.classList.add("disabled");
       }
-    } else {
-      titleElement.innerText = "ID Not Found";
-      descriptionElement.innerText = "The provided ID does not exist.";
     }
   }
 }

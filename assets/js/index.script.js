@@ -1,33 +1,30 @@
 window.onload = renderContent;
 
 function renderContent() {
-  const projectTilesContainer = document.getElementById("projectTiles");
-  const projectTilesContainer2 = document.getElementById("clientProjectTiles");
+  const professionalProjects = document.getElementById("professionalProjects");
+  const personalProjects = document.getElementById("personalProjects");
 
-  function generateProjectHTML(project, index, container) {
-    const styleIndex = (index % 6) + 1; // Cycle through styles 1 to 6
+  function generateProjectHTML(project, container) {
     const projectHTML = `
-      <article class="style${styleIndex}">
-        <span class="image">
-          <img src="${project.image}" alt="" />
-        </span>
-        <a href="project.html?id=${project.id}">
-          <h2>${project.title}</h2>
-          <div class="content">
-            <p>${project.shortDescription}</p>
-          </div>
-        </a>
-      </article>
-    `;
+    <article style="background-image: url(${project.image_path});">
+      <span class="image" style="display: none;">
+        <img src=${project.image_path} alt="">
+      </span>
+      <header class="major">
+        <h3><a href="project.html?id=${project.id}" class="link">${project.title}</a></h3>
+        <p>${project.short_description}</p>
+      </header>
+    <a href="project.html?id=${project.id}" class="link primary"></a></article>`;
     container.innerHTML += projectHTML;
   }
 
   projects.sort((a, b) => b.id - a.id);
   projects.forEach((project, index) => {
-    if (project.projectType === "personal") {
-      generateProjectHTML(project, index, projectTilesContainer);
-    } else if (project.projectType === "company") {
-      generateProjectHTML(project, index, projectTilesContainer2);
+    if (project.type == "professional") {
+      generateProjectHTML(project, professionalProjects);
+    } else if (project.type == "personal") {
+      generateProjectHTML(project, personalProjects);
+    } else {
     }
   });
 }
