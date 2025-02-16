@@ -16,7 +16,7 @@ const projects = [
     ],
     screenshots_column: 4,
     date: "September 2015",
-    my_role: "Designed and programmed the initial release of the app",
+    my_role: "Designed and developed the initial release of the application.",
     technologies:
       "Java, Dagger2, RxJava, Butterknife, Firebase Realtime Database, Firebase Storage, Google Map, and Google AdMob",
   },
@@ -37,7 +37,7 @@ const projects = [
     ],
     screenshots_column: 4,
     date: "January 2016",
-    my_role: "Designed and programmed the initial release of the app",
+    my_role: "Designed and developed the initial release of the application.",
     technologies:
       "Kotlin, Dagger2, RxJava, Firebase Storage, Firebase Crashlytics, StorIO, and Google AdMob",
   },
@@ -57,7 +57,7 @@ const projects = [
     ],
     screenshots_column: 4,
     date: "June 2017",
-    my_role: "Designed and programmed the initial release of the app",
+    my_role: "Designed and developed the initial release of the application.",
     technologies:
       "Java, Dagger2, RxJava, Retrofit, OkHttp, Butterknife, Firebase Authentication, Firebase Realtime Database, Firebase Cloud Messaging, Firebase Storage, and Google AdMob",
   },
@@ -68,7 +68,7 @@ const projects = [
     short_description:
       "Record transactions, track spending behavior, set budgets, and gain insights into their financial health",
     description:
-      "This application is designed for Android devices, erves as a comprehensive financial management tool, empowering users to efficiently record their financial transactions and gain valuable insights into their spending behavior. With its intuitive interface and robust features, users can easily track their income, expenses, and savings, thereby enabling better financial planning and decision-making. Through this app, users can conveniently log all their financial activities, including purchases, bill payments, income sources, and more, ensuring a detailed and accurate record of their financial transactions. Additionally, the app offers categorization options, allowing users to classify their expenses into different categories such as accommodation, bill, food, and others, facilitating a clearer understanding of their spending habits.",
+      "This application is designed for Android devices, serves as a comprehensive financial management tool, empowering users to efficiently record their financial transactions and gain valuable insights into their spending behavior. With its intuitive interface and robust features, users can easily track their income, expenses, and savings, thereby enabling better financial planning and decision-making. Through this app, users can conveniently log all their financial activities, including purchases, bill payments, income sources, and more, ensuring a detailed and accurate record of their financial transactions. Additionally, the app offers categorization options, allowing users to classify their expenses into different categories such as accommodation, bill, food, and others, facilitating a clearer understanding of their spending habits.",
     type: "personal",
     screenshots: [
       "images/money-tracker/screenshot-1.png",
@@ -78,7 +78,7 @@ const projects = [
     ],
     screenshots_column: 4,
     date: "June 2018",
-    my_role: "Designed and programmed the initial release of the app",
+    my_role: "Designed and developed the initial release of the application.",
     technologies:
       "Flutter, Bloc (State Management), Firebase Authentication, Firebase Realtime Database, Firebase Storage, Firebase Crashlytics, Floor (SQLite), and Google AdMob",
     link: "https://play.google.com/store/apps/details?id=com.kvsoftware.moneytracker",
@@ -100,19 +100,40 @@ const projects = [
     ],
     screenshots_column: 4,
     date: "September 2019",
-    my_role: "Designed and programmed the initial release of the app",
+    my_role: "Designed and developed the initial release of the application.",
     technologies:
       "Kotlin, Hilt, Coroutines, RxJava, Retrofit, OkHttp, Firebase Storage, Firebase Crashlytics, Google Analytics, and Google AdMob",
     link: "https://play.google.com/store/apps/details?id=com.kvsoftware.airpollution",
+  },
+  {
+    id: 45,
+    title: "DAIKIN Mobile Controller",
+    image_path: "images/daikin/image.png",
+    short_description: "An application to remotely control Daikin IoT devices",
+    description:
+      "This application is designed for Android devices and provides functions to control Daikin air conditioners and air purifiers. It supports basic operations such as power control, operation mode, temperature adjustment, fan speed, fan swing, and fan flap. Additionally, it offers advanced features, including grouped operation, a weekly timer, vacation mode, and child lock.",
+    type: "professional",
+    screenshots: [
+      "images/daikin/screenshot-1.png",
+      "images/daikin/screenshot-2.png",
+      "images/daikin/screenshot-3.png",
+      "images/daikin/screenshot-4.png",
+    ],
+    screenshots_column: 4,
+    date: "March 2022",
+    my_role:
+      "Upgraded and modified the application to support account management, connect to new device models, and ensure compatibility with all existing models.",
+    technologies: "Java, Kotlin",
+    link: "https://play.google.com/store/apps/details?id=ao.daikin.remoapp",
   },
   {
     id: 46,
     title: "Angel Investment Network",
     image_path: "images/ain/image.png",
     short_description:
-      "A back office web application for organizing group tours",
+      "A networking application that connects entrepreneurs with investors worldwide",
     description:
-      "The back office web application for Supernature Travel is designed to streamline operations, from managing customer bookings and communication to creating and scheduling customized group tours. It integrates supplier and partner management, ensuring smooth collaboration and financial tracking, including budgeting and invoicing. The platform includes tools for tour creation, pricing, and scheduling, enabling efficient tour management. With robust reporting and analytics features, the app provides insights into performance and customer behavior. This solution enhances operational efficiency and supports Supernature Travel's commitment to providing exceptional travel experiences.",
+      "The Angel Investment Network app helps investors connect with global startup opportunities. It allows users to browse a wide range of deals, filter by preferences like industry and investment amount, and communicate directly with entrepreneurs. Investors can also manage their portfolios and track investments through the app. Entrepreneurs seeking funding can create pitches on the main website, while the app is designed to streamline the investment process. This platform simplifies the connection between startups and investors for efficient funding opportunities.",
     type: "professional",
     screenshots: [
       "images/ain/screenshot-1.png",
@@ -122,7 +143,7 @@ const projects = [
     ],
     screenshots_column: 4,
     date: "September 2022",
-    my_role: "Designed and programmed the initial release of the app",
+    my_role: "Designed and developed the initial release of the application.",
     technologies:
       "Flutter, Bloc (State Management), dio, Firebase Messaging, Firebase Crashlytics, Google Analytic, and Branch.io",
     link: "https://play.google.com/store/apps/details?id=uk.co.angelinvestmentnetwork",
@@ -153,7 +174,7 @@ const projects = [
     title: "Dasta",
     image_path: "images/dasta/image.png",
     short_description:
-      "A community database connecting entrepreneurs, tourists, and local development",
+      "A community web application connecting entrepreneurs, tourists, and local development",
     description:
       "This web application serve as a community database that allows entrepreneurs and general tourists to search for information, facilitating long-term grassroots economic development planning. Entrepreneurs can more easily find communities with potential, while communities can utilize technology systems to manage their benefits effectively.",
     type: "professional",
@@ -208,7 +229,7 @@ const projects = [
     ],
     screenshots_column: 4,
     date: "June 2024",
-    my_role: "Designed and programmed the initial release of the sdk",
+    my_role: "Designed and programmed the initial release of the SDK",
     technologies:
       "Kotlin, Hilt, Coroutines, RxJava, Retrofit, OkHttp, Firebase Crashlytics, and Google Analytics",
   },
