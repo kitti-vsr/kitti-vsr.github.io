@@ -106,6 +106,26 @@ const projects = [
     link: "https://play.google.com/store/apps/details?id=com.kvsoftware.airpollution",
   },
   {
+    id: 41,
+    title: "Siam Piwat - Indoor Map SDK",
+    image_path: "images/siam-piwat/image.png",
+    short_description:
+      "An SDK provides indoor maps, navigation, and store listings for popular Bangkok malls",
+    description:
+      "This SDK integrates the MappedIn SDK for Android to provide navigation features. The user interface is fully customized by the SDK to enhance the shopping experience. It includes a curated list of stores in popular malls across Bangkok, such as Siam Center, Siam Discovery, Siam Paragon, and Iconsiam. Users can easily navigate these malls with an intuitive and user-friendly design. The SDK ensures accurate and up-to-date store information for a seamless experience.",
+    type: "professional",
+    screenshots: [
+      "images/siam-piwat/screenshot-1.png",
+      "images/siam-piwat/screenshot-2.png",
+      "images/siam-piwat/screenshot-3.png",
+      "images/siam-piwat/screenshot-4.png",
+    ],
+    screenshots_column: 4,
+    date: "June 2020",
+    my_role: "Designed and developed the initial release of the SDK.",
+    technologies: "Kotlin, Dagger2, RxJava, Retrofit, OkHttp, and MappedIn SDK",
+  },
+  {
     id: 42,
     title: "evRiderz",
     image_path: "images/evriderz/image.png",
@@ -280,7 +300,7 @@ const projects = [
   },
   {
     id: 50,
-    title: "Image Editing Kit",
+    title: "Sale Here - Image Editing Kit SDK",
     image_path: "images/sale-here/image.png",
     short_description: "A modular framework for image editing",
     description:
@@ -294,7 +314,7 @@ const projects = [
     ],
     screenshots_column: 4,
     date: "June 2024",
-    my_role: "Designed and programmed the initial release of the SDK",
+    my_role: "Designed and programmed the initial release of the SDK.",
     technologies:
       "Kotlin, Hilt, Coroutines, RxJava, Retrofit, OkHttp, Firebase Crashlytics, and Google Analytics",
   },
