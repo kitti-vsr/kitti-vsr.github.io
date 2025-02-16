@@ -106,7 +106,29 @@ const projects = [
     link: "https://play.google.com/store/apps/details?id=com.kvsoftware.airpollution",
   },
   {
-    id: 45,
+    id: 42,
+    title: "evRiderz",
+    image_path: "images/evriderz/image.png",
+    short_description:
+      "A ride hailing service provides eco-friendly transportation solutions using electric vehicles",
+    description:
+      "The evRiderz application provides eco-friendly transportation services using electric vehicles. It allows users to book rides for ride-hailing, request food deliveries, and manage fleets of electric vehicles. The app aims to reduce emissions and promote sustainability by offering green alternatives for everyday transportation. It also supports features like battery swapping for electric vehicles, making the transition to electric mobility more convenient.",
+    type: "professional",
+    screenshots: [
+      "images/evriderz/screenshot-1.png",
+      "images/evriderz/screenshot-2.png",
+      "images/evriderz/screenshot-3.png",
+      "images/evriderz/screenshot-4.png",
+    ],
+    screenshots_column: 4,
+    date: "August 2020",
+    my_role:
+      "Designed and developed the initial release of the applications for both Riderz and Driverz.",
+    technologies:
+      "Kotlin, Hilt, Coroutines, RxJava, Retrofit, OkHttp, Socket, Firebase Messaging, Firebase Crashlytics, Google Analytics, and 2C2P Payment.",
+  },
+  {
+    id: 43,
     title: "DAIKIN Mobile Controller",
     image_path: "images/daikin/image.png",
     short_description: "An application to remotely control Daikin IoT devices",
@@ -127,7 +149,28 @@ const projects = [
     link: "https://play.google.com/store/apps/details?id=ao.daikin.remoapp",
   },
   {
-    id: 46,
+    id: 44,
+    title: "Foodie 24x7",
+    image_path: "images/foodie/image.png",
+    short_description:
+      "An omni-channel platform that helps restaurants manage online orders, loyalty programs, and delivery services",
+    description:
+      "The Foodie24x7 application enables restaurants to manage online orders, loyalty programs, and delivery services. It integrates with social media platforms like Facebook and Instagram for streamlined ordering. The app offers tools for payment processing and automated logistics management. It also includes features for building customer engagement through rewards programs. Restaurants can track and analyze customer data to optimize their services.",
+    type: "professional",
+    screenshots: [
+      "images/foodie/screenshot-1.png",
+      "images/foodie/screenshot-2.png",
+      "images/foodie/screenshot-3.png",
+      "images/foodie/screenshot-4.png",
+    ],
+    screenshots_column: 4,
+    date: "July 2022",
+    my_role: "Designed and developed the initial release of the application.",
+    technologies:
+      "Flutter, Bloc (State Management), dio, Firebase Messaging, Firebase Crashlytics, Google Analytic",
+  },
+  {
+    id: 45,
     title: "Angel Investment Network",
     image_path: "images/ain/image.png",
     short_description:
@@ -147,6 +190,28 @@ const projects = [
     technologies:
       "Flutter, Bloc (State Management), dio, Firebase Messaging, Firebase Crashlytics, Google Analytic, and Branch.io",
     link: "https://play.google.com/store/apps/details?id=uk.co.angelinvestmentnetwork",
+  },
+  {
+    id: 46,
+    title: "Just Car",
+    image_path: "images/just-car/image.png",
+    short_description:
+      "An app for buying, selling, and financing inspected used cars",
+    description:
+      "JUST CAR's mobile app is a seamless platform for buying and selling used cars in Thailand. Sellers can list their vehicles easily and get the best price through professional appraisals. Buyers can browse a wide range of inspected cars, complete with over 200-point quality checks and warranty options. The app provides financing solutions, making car ownership more accessible. Users can also schedule test drives, track their transactions, and receive customer support within the app. With a user-friendly interface and secure transactions, JUST CAR ensures a hassle-free experience for all car buyers and sellers.",
+    type: "professional",
+    screenshots: [
+      "images/just-car/screenshot-1.png",
+      "images/just-car/screenshot-2.png",
+      "images/just-car/screenshot-3.png",
+      "images/just-car/screenshot-4.png",
+    ],
+    screenshots_column: 4,
+    date: "February 2023",
+    my_role:
+      "Designed and implemented a new feature, improving system functionality and user experience.",
+    technologies:
+      "Flutter, GetX (State Management), dio, Firebase Messaging, Firebase Crashlytics, Google Analytic",
   },
   {
     id: 47,
